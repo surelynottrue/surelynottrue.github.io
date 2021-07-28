@@ -1,0 +1,16 @@
+title: Spandan's Blog
+email: surelynottrue@gmail.com
+description: >- 
+  Just a simple Physics Blog
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: surelynottrue
+github_username:  surelynottrue
+
+# Build settings
+markdown: kramdown
+kramdown:
+  math_engine: katex
+plugins:
+  - jekyll-feed
+

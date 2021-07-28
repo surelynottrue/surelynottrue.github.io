@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    {% include header.html %}
+    <body>
+        <div class="backdrop">
+            <div class="top">
+                <div class="name">Spandan Anupam</div>
+                <div class="degree">Physics Student</div>
+                <a href="http://github.com/surelynottrue">GitHub</a>
+            </div>
+            <br><br>
+            <div class="main">
+                {{ content }}
+                <br><br>
+                {% for post in site.posts %}
+                <a href="{{ post.url }}">
+                    <div class="card">
+                        <h3>#1: {{ post.title }}</h3>
+                        <h5 style="display: inline; font-weight: 400; opacity: 70%;"><b>Published:  </b> {{ post.date | date_to_string}} <br> <br>
+                        <h4>TL;DR</h4> {{ post.summary }}
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+        
+    </body>
+</html>
