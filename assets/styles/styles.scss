@@ -32,7 +32,6 @@ a {
 
     &:hover {
         opacity: 100%;
-        border-bottom: 2px dotted;
     }
 }
 
@@ -116,6 +115,16 @@ a {
         display: inline;
         opacity: 80%;
         padding-right: 5px;
+    }
+}
+
+footer {
+    grid-area: foot;
+    margin-top: 50px;
+
+    & > p {
+        text-align: center;
+        opacity: 80%;
     }
 }
 

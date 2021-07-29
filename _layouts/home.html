@@ -18,11 +18,12 @@
                         <h3>{{ post.title }}</h3>
                         <h5 style="display: inline; font-weight: 400; opacity: 70%;"><b>Published:  </b> {{ post.date | date_to_string}} <br> <br>
                         <h4>TL;DR</h4> {{ post.summary }}
+                        <h5 style="margin-top: 10px; margin-bottom: 15px;"><b>READ MORE</b></h5>  
                     </div>
                 </a>
                 {% endfor %}
             </div>
+        {% include footer.html %}
         </div>
-        
     </body>
 </html>
