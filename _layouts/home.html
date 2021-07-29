@@ -11,11 +11,11 @@
             <br><br>
             <div class="main">
                 {{ content }}
-                <br><br>
+                <br>
                 {% for post in site.posts %}
                 <a href="{{ post.url }}">
                     <div class="card">
-                        <h3>#1: {{ post.title }}</h3>
+                        <h3>{{ post.title }}</h3>
                         <h5 style="display: inline; font-weight: 400; opacity: 70%;"><b>Published:  </b> {{ post.date | date_to_string}} <br> <br>
                         <h4>TL;DR</h4> {{ post.summary }}
                     </div>

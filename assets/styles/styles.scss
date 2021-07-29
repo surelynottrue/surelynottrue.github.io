@@ -13,18 +13,20 @@ html {
 
 body {
     margin: 0;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-areas:
         "top"
         "main"
         "foot";
+    grid-template-rows: auto 2fr auto;
 }
 
 a {
     text-decoration: none;
     font-weight: 600;
-    color: inherit;
+    color: rgb(28, 28, 48);
     opacity: 70%;
     transition: hover 0.5s ease;
 
@@ -36,7 +38,8 @@ a {
 
 .backdrop {
     width: 70%;
-    height: 100vh;
+    height: 100%;
+    min-height: 100vh;
     margin: 0 auto;
     background-color: #f8f8f8;
     padding: 30px;
@@ -83,6 +86,11 @@ a {
     }
 }
 
+.write-area {
+    grid-area: main;
+    text-align: justify;
+}
+
 .card {
     -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box;    
@@ -108,5 +116,11 @@ a {
         display: inline;
         opacity: 80%;
         padding-right: 5px;
+    }
+}
+
+@media (max-width: 616px) {
+    .backdrop {
+        width: 80%;
     }
 }
