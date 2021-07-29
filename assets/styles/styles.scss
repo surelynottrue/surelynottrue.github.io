@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap');
+---
+---
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
 
 :root {
-    font-family: "Fira Sans";
+    font-family: 'Fira Sans', sans-serif;
     font-size: medium;
 }
 
@@ -25,11 +27,11 @@ a {
     color: inherit;
     opacity: 70%;
     transition: hover 0.5s ease;
-}
 
-a:hover {
-    opacity: 100%;
-    border-bottom: 2px dotted;
+    &:hover {
+        opacity: 100%;
+        border-bottom: 2px dotted;
+    }
 }
 
 .backdrop {
@@ -44,11 +46,12 @@ a:hover {
     display: grid;
     grid-area: top;
     padding-top: 10px;
+
+    & a {
+        margin: 0 auto;
+    }
 }
 
-.top a {
-    margin: 0 auto;
-}
 .name {
     font-size: 30px;
     font-weight: 400;
@@ -67,17 +70,17 @@ a:hover {
 
 .main {
     grid-area: main;
-}
 
-.main a {
-    display: block;
-    font-weight: 400;
-    opacity: 100%;
-}
+    & a {
+        display: block;
+        font-weight: 400;
+        opacity: 100%;
 
-.main a:hover {
-    opacity: 100%;
-    border: unset;
+        &:hover {
+            opacity: 100%;
+            border: unset;
+        }
+    }
 }
 
 .card {
@@ -91,19 +94,19 @@ a:hover {
     background-color: white;
     box-shadow: 2px;
     transition: transform 0.2s ease;
-}
 
-.card:hover {
-    transform: scale(1.01, 1.01);
-}
+    &:hover {
+        transform: scale(1.01, 1.01);
+    }
+    
+    & h3 {
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
 
-.card h3 {
-    margin-top: 0;
-    margin-bottom: 5px;
-}
-
-.card h4 {
-    display: inline;
-    opacity: 80%;
-    padding-right: 5px;
+    & h4 {
+        display: inline;
+        opacity: 80%;
+        padding-right: 5px;
+    }
 }
