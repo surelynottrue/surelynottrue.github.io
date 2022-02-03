@@ -6,6 +6,10 @@
     {% if page.latex %}
         <script type="text/x-mathjax-config">
             MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                processEscapes: true
+                },
             extensions: [
                 "MathMenu.js",
                 "MathZoom.js",
